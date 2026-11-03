@@ -3,256 +3,268 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$YEYE COIN | La Memecoin Definitiva de Solana</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%2310b981'/><text x='25' y='65' font-family='Arial Black' font-size='50' fill='%2307090e'>Y</text></svg>">
+  <title>$YEYE COIN | The Ultimate Solana Alpha</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%2310b981'/><text x='25' y='65' font-family='Arial Black' font-size='50' fill='%23030712'>Y</text></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Fredoka', sans-serif; background-color: #07090e; color: #f8fafc; overflow-x: hidden; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030712; color: #f8fafc; overflow-x: hidden; }
     .font-mono { font-family: 'JetBrains Mono', monospace; }
     
-    .cartoon-card {
-      background: rgba(13, 17, 28, 0.9);
+    .glass-panel {
+      background: rgba(13, 19, 33, 0.85);
       backdrop-filter: blur(20px);
-      border: 4px solid #10b981;
-      box-shadow: 8px 8px 0px #047857;
-      border-radius: 28px;
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      border-radius: 32px;
     }
-    .cartoon-btn {
-      background: #10b981;
-      border: 3px solid #047857;
-      box-shadow: 4px 4px 0px #047857;
-      transition: all 0.1s ease;
+    .glass-panel:hover {
+      border-color: rgba(16, 185, 129, 0.6);
+      box-shadow: 0 25px 60px rgba(16, 185, 129, 0.2);
     }
-    .cartoon-btn:active {
-      transform: translate(2px, 2px);
-      box-shadow: 2px 2px 0px #047857;
+    .btn-neon {
+      background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+      border: 1px solid #34d399;
+      box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .cartoon-input {
-      background: #07090e;
-      border: 3px solid #1e293b;
-      border-radius: 18px;
+    .btn-neon:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 35px rgba(16, 185, 129, 0.7);
     }
-    .cartoon-input:focus {
+    .input-cyber {
+      background: #020617;
+      border: 2px solid #1e293b;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+    .input-cyber:focus {
       border-color: #10b981;
       outline: none;
-      box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
     }
-    .glow-green { text-shadow: 0 0 25px rgba(16, 185, 129, 0.6); }
+    .glow-heading {
+      text-shadow: 0 0 40px rgba(16, 185, 129, 0.4);
+    }
     .toast { transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-emerald-400 selection:text-slate-950 relative">
 
-  <!-- Fondo ambiental ciber-verde -->
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-tr from-emerald-900/40 via-green-600/15 to-transparent blur-[160px] pointer-events-none"></div>
+  <!-- Luces de fondo ambientales futuristas -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-emerald-500/15 via-emerald-900/5 to-transparent blur-[150px] pointer-events-none"></div>
 
-  <!-- TOP BAR -->
-  <header class="border-b-4 border-emerald-500/80 bg-slate-950/90 backdrop-blur sticky top-0 z-50 px-6 py-4">
+  <!-- HEADER -->
+  <header class="border-b border-emerald-500/20 bg-slate-950/80 backdrop-blur-xl sticky top-0 z-50 px-6 py-4">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center space-x-3.5">
-        <div class="w-12 h-12 rounded-2xl bg-emerald-500 border-3 border-emerald-700 flex items-center justify-center font-bold text-slate-950 text-2xl shadow-[4px_4px_0px_#047857]">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-500 to-emerald-300 flex items-center justify-center font-black text-slate-950 text-2xl shadow-lg shadow-emerald-500/30">
           🐕‍🦺
         </div>
         <div>
-          <h1 class="font-bold text-2xl tracking-wider text-emerald-400 glow-green flex items-center gap-2">
-            $YEYE COIN <span class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500 px-2.5 py-0.5 rounded-full font-mono">SOLANA MAINNET</span>
+          <h1 class="font-extrabold text-xl tracking-tight text-white flex items-center gap-2">
+            $YEYE <span class="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-2.5 py-0.5 rounded-full font-mono uppercase tracking-widest">Solana Mainnet</span>
           </h1>
-          <p class="text-xs text-slate-400">El Alfa Verde Definitivo • Staking Pasivo Automático</p>
+          <p class="text-xs text-slate-400 font-mono">Autonomous Yield Engine</p>
         </div>
       </div>
       <div>
-        <button id="connectBtn" onclick="connectWallet()" class="cartoon-btn text-slate-950 font-bold px-6 py-3 rounded-2xl text-sm flex items-center space-x-2">
+        <button id="connectBtn" onclick="connectWallet()" class="btn-neon text-slate-950 font-extrabold px-6 py-3 rounded-2xl text-sm flex items-center space-x-2">
           <span>Conectar Phantom</span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main class="max-w-6xl mx-auto px-4 py-12 flex-grow w-full space-y-12 relative z-10">
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-6xl mx-auto px-4 py-12 flex-grow w-full space-y-10 relative z-10">
     
-    <!-- STATS BANNER -->
+    <!-- BANNER DE ESTADÍSTICAS VITALES -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="cartoon-card p-6 flex flex-col justify-center">
-        <span class="text-xs font-mono uppercase tracking-wider text-slate-400">TOTAL RECAUDADO (PRESALE)</span>
-        <p class="text-3xl font-extrabold text-emerald-400 font-mono mt-1 glow-green">$24,754 USD</p>
-        <span class="text-[11px] text-emerald-500/80 mt-1 font-mono">⚡ Red Solana Mainnet Activa</span>
+      <div class="glass-panel p-6 flex flex-col justify-center">
+        <span class="text-xs font-mono uppercase tracking-widest text-slate-400">Total Recaudado (Presale)</span>
+        <p class="text-3xl font-black text-emerald-400 font-mono mt-1 glow-heading">$24,754 USD</p>
+        <span class="text-[11px] text-emerald-500/80 mt-1 font-mono flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Red Solana Activa
+        </span>
       </div>
-      <div class="cartoon-card p-6 flex flex-col justify-center">
-        <span class="text-xs font-mono uppercase tracking-wider text-slate-400">TOTAL SUPPLY</span>
-        <p class="text-2xl font-extrabold text-white font-mono mt-1">21,000,000,000</p>
-        <span class="text-[11px] text-slate-400 mt-1">Tokens $YEYE únicos</span>
+      <div class="glass-panel p-6 flex flex-col justify-center">
+        <span class="text-xs font-mono uppercase tracking-widest text-slate-400">Total Supply</span>
+        <p class="text-2xl font-black text-white font-mono mt-1">21,000,000,000</p>
+        <span class="text-[11px] text-slate-400 mt-1 font-mono">Tokens $YEYE escasos</span>
       </div>
-      <div class="cartoon-card p-6 flex flex-col justify-center">
-        <span class="text-xs font-mono uppercase tracking-wider text-slate-400">ESTADO DEL MOTOR</span>
-        <p class="text-2xl font-extrabold text-emerald-400 font-mono mt-1">Staking 450% APY</p>
-        <span class="text-[11px] text-slate-400 mt-1">Reflexiones pasivas cada hora</span>
+      <div class="glass-panel p-6 flex flex-col justify-center">
+        <span class="text-xs font-mono uppercase tracking-widest text-slate-400">Motor de Staking</span>
+        <p class="text-2xl font-black text-emerald-400 font-mono mt-1">450% APY</p>
+        <span class="text-[11px] text-slate-400 mt-1 font-mono">Reflexiones pasivas cada hora</span>
       </div>
     </div>
 
-    <!-- HERO SECTION -->
-    <div class="cartoon-card p-8 md:p-14 relative overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <!-- HERO SECTION: IMAGEN REAL HD DEL PERRO CIBER-VERDE -->
+    <div class="glass-panel p-8 md:p-14 relative overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       <div class="space-y-6">
-        <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/50 px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest inline-block font-bold">
-          Autonomous Yield Engine • JLC7289
-        </span>
+        <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 px-4 py-1.5 rounded-full">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest">JLC7289 Verified Core</span>
+        </div>
         <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-          El fin de los memes aburridos. Conoce a <span class="text-emerald-400 glow-green">YEYE</span>.
+          El alfa definitivo llegó a Solana con <span class="text-emerald-400 glow-heading">YEYE</span>.
         </h2>
-        <p class="text-slate-300 text-base leading-relaxed">
-          Con un suministro de <strong class="text-emerald-400">21,000,000,000 tokens</strong>, $YEYE fusiona el alma de Snoopy con esteroides ciber-verdes en Solana. Ya ha recaudado más de <strong class="text-emerald-400">$24,754 USD</strong> y está listo para dominar el mercado.
+        <p class="text-slate-300 text-base leading-relaxed font-normal">
+          Olvida los memes comunes. $YEYE combina la actitud rebelde de un canino cibernético con contratos inteligentes de alto rendimiento. Con <strong class="text-emerald-400">21,000,000,000 tokens</strong> limitados y más de <strong class="text-emerald-400">$24,754 USD</strong> recaudados, el dominio absoluto del mercado es inevitable.
         </p>
-        <div class="flex flex-wrap gap-4 pt-2">
-          <div class="bg-slate-900 border-2 border-emerald-500/50 px-4 py-3 rounded-2xl font-mono">
+        <div class="flex flex-wrap gap-4 pt-2 font-mono">
+          <div class="bg-slate-900/80 border border-emerald-500/30 px-4 py-3 rounded-2xl">
             <span class="text-slate-400 block text-xs">Ratio de Emisión</span>
             <span class="text-emerald-400 font-bold text-sm">$10 USD = 1,000 $YEYE</span>
           </div>
-          <div class="bg-slate-900 border-2 border-emerald-500/50 px-4 py-3 rounded-2xl font-mono">
-            <span class="text-slate-400 block text-xs">Comunidad Hold</span>
-            <span class="text-emerald-400 font-bold text-sm">Activa & Creciendo</span>
+          <div class="bg-slate-900/80 border border-emerald-500/30 px-4 py-3 rounded-2xl">
+            <span class="text-slate-400 block text-xs">Blockchain</span>
+            <span class="text-white font-bold text-sm">Solana Mainnet</span>
           </div>
         </div>
       </div>
 
-      <!-- ARTE SNOOPY VERDE CIBER CON MELENA HD -->
+      <!-- FOTO/AVATAR REAL HD ESTILO CYBERPUNK (IMPECABLE Y NÍTIDO) -->
       <div class="flex justify-center items-center">
-        <div class="relative w-72 h-72 md:w-88 md:h-88 bg-gradient-to-br from-emerald-500/20 to-green-900/30 rounded-3xl border-4 border-emerald-500 shadow-[0_0_40px_rgba(16,185,129,0.3)] flex items-center justify-center p-6">
-          <svg viewBox="0 0 300 300" class="w-full h-full drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)]" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="snoopyBody" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#4ade80"/>
-                <stop offset="100%" stop-color="#059669"/>
-              </linearGradient>
-              <linearGradient id="melenaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#34d399"/>
-                <stop offset="100%" stop-color="#047857"/>
-              </linearGradient>
-              <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
-                <feGaussianBlur stdDeviation="6" result="blur"/>
-                <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-              </filter>
-            </defs>
-
-            <circle cx="150" cy="150" r="120" fill="#030712" stroke="#10b981" stroke-width="4" stroke-dasharray="12 8"/>
-
-            <!-- Melena Verde Explosiva -->
-            <path d="M90 60 Q130 15 180 35 Q220 20 215 75 Q245 100 205 130 Q160 90 90 60 Z" fill="url(#melenaGrad)" stroke="#022c22" stroke-width="5" stroke-linejoin="round"/>
-            <path d="M100 45 Q135 5 175 30 Q145 70 110 55 Z" fill="#6ee7b7" stroke="#022c22" stroke-width="4"/>
-
-            <!-- Oreja caída icónica de Snoopy -->
-            <path d="M95 100 Q65 120 50 170 Q70 190 95 140 Z" fill="#047857" stroke="#022c22" stroke-width="5" stroke-linejoin="round"/>
-
-            <!-- Cabeza clásica perfilada de Snoopy -->
-            <path d="M80 110 Q70 90 100 85 Q160 75 195 105 Q220 125 210 160 Q195 190 140 185 Q90 180 80 110 Z" fill="url(#snoopyBody)" stroke="#022c22" stroke-width="6" stroke-linejoin="round"/>
-
-            <!-- Hocico alargado característico -->
-            <path d="M180 130 Q240 135 250 165 Q235 185 180 175 Z" fill="#86efac" stroke="#022c22" stroke-width="6" stroke-linejoin="round"/>
-
-            <!-- Nariz redonda negra -->
-            <ellipse cx="248" cy="158" rx="10" ry="8" fill="#030712"/>
-            <ellipse cx="246" cy="156" rx="3.5" ry="2" fill="#ffffff" opacity="0.8"/>
-
-            <!-- Gafas de sol estilo hacker -->
-            <path d="M135 105 L195 118 L190 142 L130 128 Z" fill="#030712" stroke="#10b981" stroke-width="4" stroke-linejoin="round" filter="url(#neonGlow)"/>
-
-            <!-- Collar de púas Web3 -->
-            <path d="M95 180 Q145 215 195 185 L188 198 Q145 228 102 198 Z" fill="#eab308" stroke="#022c22" stroke-width="5"/>
-            <circle cx="145" cy="207" r="6" fill="#ef4444" stroke="#022c22" stroke-width="2.5"/>
-          </svg>
+        <div class="relative w-72 h-72 md:w-92 md:h-92 bg-gradient-to-tr from-emerald-500/20 via-slate-900 to-emerald-900/30 rounded-3xl border-2 border-emerald-500/60 shadow-[0_0_60px_rgba(16,185,129,0.3)] overflow-hidden flex items-center justify-center p-2">
+          <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80" alt="$YEYE Mascot" class="w-full h-full object-cover rounded-2xl filter saturate-150 contrast-125 border border-emerald-500/40 hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-center">
+            <span class="bg-emerald-950/90 text-emerald-400 border border-emerald-500/50 px-3 py-1 rounded-full text-xs font-mono font-bold tracking-wider uppercase shadow-lg">
+              ⚡ $YEYE CYBER ALPHA
+            </span>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- SECCIÓN CALCULADORA Y BILLETERA -->
+    <!-- SECCIÓN CALCULADORA Y BILLETERA RECEPTORA -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="cartoon-card p-8 space-y-6">
-        <h3 class="text-2xl font-bold text-emerald-400">🧮 Calculadora $YEYE</h3>
-        <p class="text-slate-300 text-sm">Calcula cuántos tokens $YEYE recibes al instante ($10 USD = 1,000 $YEYE).</p>
-        <div class="space-y-4">
+      
+      <!-- CALCULADORA DE CONVERSIÓN -->
+      <div class="glass-panel p-8 space-y-6">
+        <h3 class="text-2xl font-bold text-white flex items-center gap-2">
+          <span>🧮</span> Calculadora $YEYE
+        </h3>
+        <p class="text-slate-300 text-sm">Convierte tus aportes al instante según la tasa oficial ($10 USD = 1,000 $YEYE).</p>
+        
+        <div class="space-y-5">
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Aporte en USD / USDC / SOL</label>
+            <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2 font-mono">Aporte en USD / USDC / SOL</label>
             <div class="relative">
-              <span class="absolute left-4 top-3.5 text-emerald-400 font-bold text-lg">$</span>
-              <input type="number" id="usdInput" min="1" value="10" oninput="calculateYeye()" class="cartoon-input w-full pl-9 pr-4 py-3.5 text-white font-mono font-bold text-lg">
+              <span class="absolute left-4 top-4 text-emerald-400 font-bold text-lg">$</span>
+              <input type="number" id="usdInput" min="1" value="10" oninput="calculateYeye()" class="input-cyber w-full pl-9 pr-4 py-4 text-white font-mono font-bold text-lg">
             </div>
           </div>
-          <div class="bg-slate-900 border-2 border-emerald-500/40 rounded-2xl p-6 text-center space-y-2">
-            <span class="text-xs text-slate-400 font-mono uppercase">Tus Tokens $YEYE a Recibir:</span>
-            <div id="yeyeOutput" class="text-4xl font-extrabold text-emerald-400 font-mono glow-green">1,000.00 $YEYE</div>
+
+          <div class="bg-slate-900/90 border border-emerald-500/30 rounded-2xl p-6 text-center space-y-2">
+            <span class="text-xs text-slate-400 font-mono uppercase tracking-widest">Tus Tokens $YEYE a Recibir:</span>
+            <div id="yeyeOutput" class="text-4xl font-extrabold text-emerald-400 font-mono glow-heading">1,000.00 $YEYE</div>
+            <p class="text-[11px] text-slate-500 font-mono">Activación de staking pasivo directo en tu Phantom.</p>
           </div>
-          <button onclick="simulateBuy()" class="cartoon-btn w-full text-slate-950 font-bold py-4 rounded-xl text-base uppercase tracking-wider shadow-lg">
+
+          <button onclick="simulateBuy()" class="btn-neon w-full text-slate-950 font-black py-4 rounded-2xl text-base uppercase tracking-wider shadow-xl">
             Adquirir $YEYE Ahora
           </button>
         </div>
       </div>
 
-      <div class="cartoon-card p-8 space-y-6 flex flex-col justify-between">
-        <div class="space-y-4">
-          <h3 class="text-2xl font-bold text-emerald-400">💼 Billetera Receptora Oficial</h3>
-          <p class="text-slate-300 text-sm">Todos los aportes en Solana o USDC llegan directamente a tu billetera designada.</p>
+      <!-- BILLETERA RECEPTORA OFICIAL -->
+      <div class="glass-panel p-8 space-y-6 flex flex-col justify-between">
+        <div class="space-y-5">
+          <h3 class="text-2xl font-bold text-white flex items-center gap-2">
+            <span>💼</span> Billetera Receptora Oficial
+          </h3>
+          <p class="text-slate-300 text-sm">
+            Todos los aportes en Solana o USDC enviados desde la plataforma caen de manera directa en tu billetera designada.
+          </p>
+
           <div class="space-y-2">
-            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300">Tu Dirección de Solana (Wallet Destino)</label>
-            <div class="bg-slate-900 border-2 border-emerald-500/40 p-4 rounded-2xl flex items-center justify-between gap-2">
+            <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 font-mono">Tu Dirección de Solana (Wallet Destino)</label>
+            <div class="bg-slate-900/90 border border-emerald-500/30 p-4 rounded-2xl flex items-center justify-between gap-3">
               <span id="targetWallet" class="text-xs font-mono text-emerald-300 truncate">GiKW5Ftur9arHntZF8R26uTVdBmM7wYxQcXECLng5K6t</span>
-              <button onclick="copyWallet()" class="cartoon-btn text-slate-950 px-3 py-1.5 rounded-xl text-xs font-bold transition flex-shrink-0">Copiar</button>
+              <button onclick="copyWallet()" class="btn-neon text-slate-950 px-4 py-2 rounded-xl text-xs font-extrabold transition flex-shrink-0">
+                Copiar
+              </button>
             </div>
           </div>
         </div>
-        <div class="bg-slate-900/90 border-2 border-emerald-500/30 rounded-2xl p-4 text-xs font-mono text-slate-400 space-y-2">
-          <div class="flex justify-between"><span>Seguridad Vault:</span><span class="text-emerald-400 font-bold">Enrutamiento Activo</span></div>
-          <div class="flex justify-between"><span>Red:</span><span class="text-white">Solana Mainnet</span></div>
+
+        <div class="bg-slate-900/60 border border-emerald-500/20 rounded-2xl p-4 text-xs font-mono text-slate-400 space-y-2">
+          <div class="flex justify-between">
+            <span>Seguridad Vault:</span>
+            <span class="text-emerald-400 font-bold flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Enrutamiento Activo
+            </span>
+          </div>
+          <div class="flex justify-between">
+            <span>Red:</span>
+            <span class="text-white">Solana Mainnet</span>
+          </div>
         </div>
       </div>
+
     </div>
 
-    <!-- ROADMAP -->
-    <div class="cartoon-card p-8 md:p-12 space-y-8">
+    <!-- ROADMAP (HOJA DE RUTA) -->
+    <div class="glass-panel p-8 md:p-12 space-y-8">
       <div class="text-center max-w-2xl mx-auto space-y-2">
-        <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/50 px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest font-bold inline-block">Estrategia & Expansión</span>
+        <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest font-bold inline-block">
+          Estrategia & Expansión
+        </span>
         <h3 class="text-3xl font-extrabold text-white">🗺️ Hoja de Ruta $YEYE (Roadmap)</h3>
+        <p class="text-slate-300 text-sm">El plan maestro para consolidar el imperio memecoin en la red de Solana.</p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-slate-900/90 border-2 border-emerald-500/50 p-6 rounded-2xl space-y-3">
-          <span class="text-xs font-mono font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 1</span>
-          <h4 class="text-xl font-bold text-white">Génesis</h4>
-          <ul class="text-xs text-slate-300 space-y-2 font-mono">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-mono">
+        <div class="bg-slate-900/80 border border-emerald-500/30 p-6 rounded-2xl space-y-3">
+          <span class="text-xs font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 1</span>
+          <h4 class="text-xl font-extrabold text-white font-sans">Génesis</h4>
+          <ul class="text-xs text-slate-300 space-y-2">
             <li>✅ Emisión 21,000,000,000 tokens.</li>
-            <li>✅ Lanzamiento Snoopy Verde HD.</li>
-            <li>🚀 Recaudación $24,754+ USD.</li>
+            <li>✅ Lanzamiento Avatar HD Ciber.</li>
+            <li>🚀 Recaudación inicial $24,754+ USD.</li>
           </ul>
         </div>
-        <div class="bg-slate-900/90 border-2 border-emerald-500/50 p-6 rounded-2xl space-y-3">
-          <span class="text-xs font-mono font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 2</span>
-          <h4 class="text-xl font-bold text-white">Dominio DEX</h4>
-          <ul class="text-xs text-slate-300 space-y-2 font-mono">
+
+        <div class="bg-slate-900/80 border border-emerald-500/30 p-6 rounded-2xl space-y-3">
+          <span class="text-xs font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 2</span>
+          <h4 class="text-xl font-extrabold text-white font-sans">Dominio DEX</h4>
+          <ul class="text-xs text-slate-300 space-y-2">
             <li>🔄 Listado en Raydium & Orca.</li>
             <li>💧 Pool de Liquidez activo.</li>
-            <li>🎁 Airdrops para holders.</li>
+            <li>🎁 Airdrops exclusivos para holders.</li>
           </ul>
         </div>
-        <div class="bg-slate-900/90 border-2 border-emerald-500/50 p-6 rounded-2xl space-y-3">
-          <span class="text-xs font-mono font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 3</span>
-          <h4 class="text-xl font-bold text-white">El Imperio</h4>
-          <ul class="text-xs text-slate-300 space-y-2 font-mono">
-            <li>🌐 dApp de Staking 450% APY.</li>
-            <li>🛒 Pasarela de pagos $YEYE.</li>
-            <li>💎 Gobernanza DAO.</li>
+
+        <div class="bg-slate-900/80 border border-emerald-500/30 p-6 rounded-2xl space-y-3">
+          <span class="text-xs font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 3</span>
+          <h4 class="text-xl font-extrabold text-white font-sans">El Imperio</h4>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li>🌐 dApp de Staking 450% APY real.</li>
+            <li>🛒 Pasarela de pagos descentralizada.</li>
+            <li>💎 Gobernanza DAO exclusiva.</li>
           </ul>
         </div>
       </div>
     </div>
+
   </main>
 
-  <footer class="border-t-4 border-emerald-500/80 bg-slate-950 py-8 px-4 text-center text-xs text-slate-400 space-y-2 relative z-10">
-    <p>© 2026 $YEYE COIN • El Alfa de Solana • Metodología JLC7289</p>
+  <!-- FOOTER -->
+  <footer class="border-t border-emerald-500/20 bg-slate-950 py-8 px-4 text-center text-xs text-slate-400 space-y-2 relative z-10 font-mono">
+    <p>© 2026 $YEYE COIN • El Alfa de Solana • Metodología Institucional <span class="text-emerald-400 font-semibold">JLC7289</span></p>
+    <p class="text-[10px] text-slate-600">Smart Contract & Liquidity Router Verified</p>
   </footer>
 
-  <div id="toast" class="fixed bottom-6 right-6 translate-y-20 opacity-0 pointer-events-none toast cartoon-card bg-slate-950 p-4 rounded-2xl shadow-2xl flex items-center space-x-3.5 max-w-sm z-50">
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="fixed bottom-6 right-6 translate-y-20 opacity-0 pointer-events-none toast glass-panel bg-slate-950 p-4 rounded-2xl shadow-2xl flex items-center space-x-3.5 max-w-sm z-50">
     <div class="text-2xl">🐕‍🦺</div>
     <div>
-      <h4 id="toastTitle" class="text-xs font-bold text-emerald-400">Notificación</h4>
+      <h4 id="toastTitle" class="text-xs font-bold text-emerald-400 font-mono">Notificación</h4>
       <p id="toastMessage" class="text-[11px] text-slate-300">Procesando...</p>
     </div>
   </div>
@@ -278,7 +290,7 @@
           const resp = await window.solana.connect();
           connectedPublicKey = resp.publicKey.toString();
           const btn = document.getElementById('connectBtn');
-          btn.className = "cartoon-btn bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-2xl text-sm flex items-center space-x-2";
+          btn.className = "btn-neon text-slate-950 font-extrabold px-6 py-3 rounded-2xl text-sm flex items-center space-x-2";
           btn.innerText = `${connectedPublicKey.substring(0,4)}...${connectedPublicKey.substring(connectedPublicKey.length-4)}`;
           showToast('Phantom Conectada', '¡Listo para tradear y holdear $YEYE!');
         } catch (err) {
