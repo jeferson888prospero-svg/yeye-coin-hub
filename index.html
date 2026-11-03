@@ -3,57 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$YEYE COIN | El Perro Verde Autogestionado de Solana</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%2322c55e'/><text x='20' y='60' font-family='Arial Black' font-weight='bold' font-size='40' fill='%23ffffff'>Y</text></svg>">
+  <title>$YEYE COIN | La Memecoin Definitiva de Solana</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%2310b981'/><text x='25' y='65' font-family='Arial Black' font-size='50' fill='%2307090e'>Y</text></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Fredoka', sans-serif; background-color: #0f172a; color: #f8fafc; overflow-x: hidden; }
+    body { font-family: 'Fredoka', sans-serif; background-color: #07090e; color: #f8fafc; overflow-x: hidden; }
     .font-mono { font-family: 'JetBrains Mono', monospace; }
-    /* Estilo Cartoon con bordes gruesos y sombras sólidas */
-    .cartoon-box {
-      background: #1e293b;
-      border: 4px solid #22c55e;
-      box-shadow: 6px 6px 0px #22c55e;
-      border-radius: 24px;
+    
+    /* Estilo Cartoon Gamberro / Neón de Alta Gama */
+    .cartoon-card {
+      background: rgba(13, 17, 28, 0.85);
+      backdrop-filter: blur(20px);
+      border: 4px solid #10b981;
+      box-shadow: 8px 8px 0px #047857;
+      border-radius: 28px;
     }
     .cartoon-btn {
-      background: #22c55e;
-      border: 3px solid #14532d;
-      box-shadow: 4px 4px 0px #14532d;
+      background: #10b981;
+      border: 3px solid #047857;
+      box-shadow: 4px 4px 0px #047857;
       transition: all 0.1s ease;
     }
     .cartoon-btn:active {
       transform: translate(2px, 2px);
-      box-shadow: 2px 2px 0px #14532d;
+      box-shadow: 2px 2px 0px #047857;
     }
     .cartoon-input {
-      background: #0f172a;
-      border: 3px solid #334155;
-      border-radius: 16px;
+      background: #07090e;
+      border: 3px solid #1e293b;
+      border-radius: 18px;
     }
     .cartoon-input:focus {
-      border-color: #22c55e;
+      border-color: #10b981;
       outline: none;
+      box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
     }
+    .glow-green { text-shadow: 0 0 20px rgba(16, 185, 129, 0.5); }
     .toast { transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-green-400 selection:text-slate-950">
+<body class="min-h-screen flex flex-col justify-between selection:bg-emerald-400 selection:text-slate-950 relative">
+
+  <!-- Fondo ambiental ciber-verde -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[400px] bg-gradient-to-tr from-emerald-900/30 via-green-600/10 to-transparent blur-[140px] pointer-events-none"></div>
 
   <!-- TOP BAR -->
-  <header class="border-b-4 border-green-500 bg-slate-900/90 backdrop-blur sticky top-0 z-50 px-4 py-4">
+  <header class="border-b-4 border-emerald-500/80 bg-slate-950/90 backdrop-blur sticky top-0 z-50 px-6 py-4">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <div class="flex items-center space-x-3">
-        <div class="w-12 h-12 rounded-2xl bg-green-500 border-3 border-green-700 flex items-center justify-center font-bold text-slate-950 text-2xl shadow-[3px_3px_0px_#14532d]">
-          🐕
+      <div class="flex items-center space-x-3.5">
+        <div class="w-12 h-12 rounded-2xl bg-emerald-500 border-3 border-emerald-700 flex items-center justify-center font-bold text-slate-950 text-2xl shadow-[4px_4px_0px_#047857]">
+          🐕‍🦺
         </div>
         <div>
-          <h1 class="font-bold text-2xl tracking-wider text-green-400 flex items-center gap-2">
-            $YEYE COIN <span class="text-xs bg-green-500/20 text-green-300 border border-green-500 px-2 py-0.5 rounded-full font-mono">SOLANA</span>
+          <h1 class="font-bold text-2xl tracking-wider text-emerald-400 glow-green flex items-center gap-2">
+            $YEYE COIN <span class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500 px-2.5 py-0.5 rounded-full font-mono">SOLANA MAINNET</span>
           </h1>
-          <p class="text-xs text-slate-400">El Perro Verde Autogestionado • Staking Automático</p>
+          <p class="text-xs text-slate-400">El Alfa Verde Definitivo • Staking Pasivo Automático</p>
         </div>
       </div>
       <div>
@@ -65,116 +72,128 @@
   </header>
 
   <!-- MAIN CONTENT -->
-  <main class="max-w-6xl mx-auto px-4 py-12 flex-grow w-full space-y-12">
+  <main class="max-w-6xl mx-auto px-4 py-12 flex-grow w-full space-y-12 relative z-10">
     
-    <!-- HERO SECTION CON MASCOTA ESTILO SNOOPY VERDE -->
-    <div class="cartoon-box p-8 md:p-12 relative overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <!-- STATS BANNER DE RECAUDACIÓN -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="cartoon-card p-6 flex flex-col justify-center">
+        <span class="text-xs font-mono uppercase tracking-wider text-slate-400">TOTAL RECAUDADO (PRESALE)</span>
+        <p class="text-3xl font-extrabold text-emerald-400 font-mono mt-1 glow-green">$24,754 USD</p>
+        <span class="text-[11px] text-emerald-500/80 mt-1 font-mono">⚡ Red Solana Mainnet Activa</span>
+      </div>
+      <div class="cartoon-card p-6 flex flex-col justify-center">
+        <span class="text-xs font-mono uppercase tracking-wider text-slate-400">RATIO DE EMISIÓN</span>
+        <p class="text-2xl font-extrabold text-white font-mono mt-1">$10 = 1,000 $YEYE</p>
+        <span class="text-[11px] text-slate-400 mt-1">Airdrop directo a Phantom</span>
+      </div>
+      <div class="cartoon-card p-6 flex flex-col justify-center">
+        <span class="text-xs font-mono uppercase tracking-wider text-slate-400">ESTADO DEL MOTOR</span>
+        <p class="text-2xl font-extrabold text-emerald-400 font-mono mt-1">Staking 450% APY</p>
+        <span class="text-[11px] text-slate-400 mt-1">Reflexiones pasivas cada hora</span>
+      </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="cartoon-card p-8 md:p-14 relative overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div class="space-y-6">
-        <span class="bg-green-500/20 text-green-400 border border-green-500/50 px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest inline-block font-bold">
-          Autonomous Yield & Reflection
+        <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/50 px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest inline-block font-bold">
+          Autonomous Yield Engine • JLC7289
         </span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-          Conoce a <span class="text-green-400">YEYE</span>, el primer perro verde DeFi.
+          El fin de los memes aburridos. Conoce a <span class="text-emerald-400 glow-green">YEYE</span>.
         </h2>
         <p class="text-slate-300 text-base leading-relaxed">
-          Inspirado en los clásicos cómics de caricatura pero con esteroides en la blockchain de Solana. Cada inyección de liquidez (USDC/SOL) alimenta su motor algorítmico de autogeneración, repartiendo recompensas pasivas directamente en tu billetera Phantom por hacer <strong class="text-green-400">Hold</strong>.
+          Olvídate de Doge y Shiba. $YEYE es el canino rebelde de Solana que ya ha recaudado más de <strong class="text-emerald-400">$24,754 USD</strong> en su fase inicial. Cada aporte en SOL o USDC se enruta de forma segura a la tesorería oficial para dominar el mercado.
         </p>
         <div class="flex flex-wrap gap-4 pt-2">
-          <div class="bg-slate-900 border-2 border-green-500/50 px-4 py-2 rounded-xl text-xs font-mono">
-            <span class="text-slate-400 block">TVL Auto-Sostenible</span>
-            <span class="text-green-400 font-bold text-sm">$1,450,890 SOL</span>
+          <div class="bg-slate-900 border-2 border-emerald-500/50 px-4 py-3 rounded-2xl font-mono">
+            <span class="text-slate-400 block text-xs">Red Blockchain</span>
+            <span class="text-emerald-400 font-bold text-sm">Solana (High Speed)</span>
           </div>
-          <div class="bg-slate-900 border-2 border-green-500/50 px-4 py-2 rounded-xl text-xs font-mono">
-            <span class="text-slate-400 block">APY Staking Pasivo</span>
-            <span class="text-green-400 font-bold text-sm">~450% APY</span>
+          <div class="bg-slate-900 border-2 border-emerald-500/50 px-4 py-3 rounded-2xl font-mono">
+            <span class="text-slate-400 block text-xs">Comunidad Hold</span>
+            <span class="text-emerald-400 font-bold text-sm">Activa & Creciendo</span>
           </div>
         </div>
       </div>
 
-      <!-- ILUSTRACIÓN CARICATURA SNOOPY VERDE CON MELENA -->
+      <!-- ARTE VECTORIAL: PERRO CALLEJERO CON MELENA VERDE HACKER -->
       <div class="flex justify-center items-center">
-        <div class="relative w-64 h-64 md:w-80 md:h-80 bg-green-500/10 rounded-full border-4 border-dashed border-green-500/40 flex items-center justify-center p-6 animate-pulse">
-          <!-- SVG Vectorial de Caricatura: Perro Verde con Melena Estilo Snoopy -->
-          <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-[0_10px_15px_rgba(34,197,94,0.3)]" xmlns="http://www.w3.org/2000/svg">
-            <!-- Melena Verde Explosiva -->
-            <path d="M70 50 Q90 10 130 30 Q160 45 150 80 Q170 100 140 120 Q120 70 70 50 Z" fill="#16a34a" stroke="#052e16" stroke-width="4"/>
-            <path d="M60 60 Q80 20 110 40 Q90 70 60 60 Z" fill="#22c55e" stroke="#052e16" stroke-width="4"/>
-            <!-- Cabeza de Perro Estilo Snoopy -->
-            <path d="M60 80 Q50 70 70 65 Q110 60 130 90 Q140 110 130 130 Q110 150 80 140 Q60 130 60 80 Z" fill="#86efac" stroke="#052e16" stroke-width="5"/>
-            <!-- Hocico alargado -->
-            <path d="M110 100 Q150 105 160 125 Q150 140 110 130 Z" fill="#bbf7d0" stroke="#052e16" stroke-width="5"/>
-            <!-- Nariz negra clásica de caricatura -->
-            <ellipse cx="158" cy="122" rx="8" ry="6" fill="#0f172a"/>
-            <!-- Ojo expresivo de caricatura -->
-            <circle cx="110" cy="90" r="7" fill="#0f172a"/>
-            <circle cx="112" cy="88" r="2.5" fill="#ffffff"/>
-            <!-- Oreja caída icónica -->
-            <path d="M80 75 Q50 90 40 130 Q55 140 70 110 Z" fill="#15803d" stroke="#052e16" stroke-width="5"/>
-            <!-- Collar de Púas / Estilo Web3 -->
-            <path d="M75 135 Q100 150 125 135 L120 145 Q100 160 80 145 Z" fill="#eab308" stroke="#052e16" stroke-width="3"/>
+        <div class="relative w-64 h-64 md:w-80 md:h-80 bg-emerald-500/10 rounded-full border-4 border-dashed border-emerald-500/40 flex items-center justify-center p-6 animate-pulse">
+          <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-[0_15px_25px_rgba(16,185,129,0.4)]" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 40 Q90 5 120 25 Q150 10 145 50 Q175 70 150 100 Q180 120 130 130 Q110 80 60 40 Z" fill="#059669" stroke="#022c22" stroke-width="4"/>
+            <path d="M70 30 Q100 -5 130 20 Q110 50 80 40 Z" fill="#34d399" stroke="#022c22" stroke-width="4"/>
+            <path d="M90 15 Q120 0 140 25 Z" fill="#6ee7b7" stroke="#022c22" stroke-width="3"/>
+            <path d="M50 80 Q40 60 70 55 Q110 50 135 80 Q150 100 140 130 Q120 155 80 145 Q50 135 50 80 Z" fill="#a7f3d0" stroke="#022c22" stroke-width="5"/>
+            <path d="M115 95 Q160 100 165 125 Q155 145 115 135 Z" fill="#d1fae5" stroke="#022c22" stroke-width="5"/>
+            <ellipse cx="163" cy="120" rx="7" ry="5" fill="#07090e"/>
+            <path d="M95 75 L140 85 L135 105 L90 95 Z" fill="#07090e" stroke="#10b981" stroke-width="3"/>
+            <path d="M65 55 Q40 30 55 15 Q75 35 75 55 Z" fill="#047857" stroke="#022c22" stroke-width="4"/>
+            <path d="M70 140 Q100 160 130 140 L125 150 Q100 170 75 150 Z" fill="#f59e0b" stroke="#022c22" stroke-width="3"/>
+            <circle cx="100" cy="153" r="4" fill="#ef4444"/>
           </svg>
         </div>
       </div>
     </div>
 
-    <!-- SECCIÓN CALCULADORA Y DIRECCIÓN DE SOLANA -->
+    <!-- SECCIÓN CALCULADORA Y BILLETERA RECEPTORA -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       
-      <!-- CALCULADORA DE CONVERSIÓN -->
-      <div class="cartoon-box p-8 space-y-6">
-        <h3 class="text-2xl font-bold text-green-400">🧮 Calculadora $YEYE</h3>
-        <p class="text-slate-300 text-sm">Calcula cuántos tokens $YEYE obtienes según tu contribución en USDC o Solana (Ratio base: $10 = 100 $YEYE).</p>
+      <!-- CALCULADORA DE CONVERSIÓN ($10 = 1,000 $YEYE) -->
+      <div class="cartoon-card p-8 space-y-6">
+        <h3 class="text-2xl font-bold text-emerald-400">🧮 Calculadora $YEYE</h3>
+        <p class="text-slate-300 text-sm">Calcula cuántos tokens $YEYE recibes al instante (Ratio oficial: $10 USD = 1,000 $YEYE).</p>
         
         <div class="space-y-4">
           <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Ingresa tu aporte (USD / USDC / SOL)</label>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Aporte en USD / USDC / SOL</label>
             <div class="relative">
-              <span class="absolute left-4 top-3.5 text-green-400 font-bold">$</span>
-              <input type="number" id="usdInput" min="1" value="10" oninput="calculateYeye()" class="cartoon-input w-full pl-8 pr-4 py-3 text-white font-mono font-bold text-lg">
+              <span class="absolute left-4 top-3.5 text-emerald-400 font-bold text-lg">$</span>
+              <input type="number" id="usdInput" min="1" value="10" oninput="calculateYeye()" class="cartoon-input w-full pl-9 pr-4 py-3.5 text-white font-mono font-bold text-lg">
             </div>
           </div>
 
-          <div class="bg-slate-900 border-2 border-green-500/40 rounded-2xl p-6 text-center space-y-2">
-            <span class="text-xs text-slate-400 font-mono uppercase">Recibirás en tu Phantom:</span>
-            <div id="yeyeOutput" class="text-4xl font-extrabold text-green-400 font-mono">100.00 $YEYE</div>
-            <p class="text-[11px] text-slate-500">Incluye activación automática de Smart Staking Pasivo.</p>
+          <div class="bg-slate-900 border-2 border-emerald-500/40 rounded-2xl p-6 text-center space-y-2">
+            <span class="text-xs text-slate-400 font-mono uppercase">Tus Tokens $YEYE a Recibir:</span>
+            <div id="yeyeOutput" class="text-4xl font-extrabold text-emerald-400 font-mono glow-green">1,000.00 $YEYE</div>
+            <p class="text-[11px] text-slate-500">Activación automática de staking pasivo en tu Phantom.</p>
           </div>
 
           <button onclick="simulateBuy()" class="cartoon-btn w-full text-slate-950 font-bold py-4 rounded-xl text-base uppercase tracking-wider shadow-lg">
-            Adquirir $YEYE & Activar Staking
+            Adquirir $YEYE Ahora
           </button>
         </div>
       </div>
 
-      <!-- DIRECCIÓN DE LA RED Y MOTOR AUTOGESTIONADO -->
-      <div class="cartoon-box p-8 space-y-6 flex flex-col justify-between">
+      <!-- BILLETERA RECEPTORA OFICIAL INTEGRADA -->
+      <div class="cartoon-card p-8 space-y-6 flex flex-col justify-between">
         <div class="space-y-4">
-          <h3 class="text-2xl font-bold text-green-400">⚡ Tesorería Autogestionada</h3>
+          <h3 class="text-2xl font-bold text-emerald-400">💼 Billetera Receptora Oficial</h3>
           <p class="text-slate-300 text-sm">
-            El contrato inteligente de $YEYE está programado para enrutar los aportes hacia estrategias de arbitraje y pools de liquidez en Solana, garantizando que el ecosistema se multiplique solo.
+            Todos los aportes en Solana o USDC enviados desde la plataforma caen de manera directa en tu billetera designada.
           </p>
 
           <div class="space-y-2">
-            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300">Dirección Oficial del Vault de Solana ($YEYE)</label>
-            <div class="bg-slate-900 border-2 border-green-500/40 p-3.5 rounded-xl flex items-center justify-between gap-2">
-              <span id="vaultAddress" class="text-xs font-mono text-green-300 truncate">YEYE999SolanaAutonomousVaultChainProtocol999</span>
-              <button onclick="copyVault()" class="bg-green-500/20 hover:bg-green-500/30 text-green-400 border border-green-500 px-3 py-1.5 rounded-lg text-xs font-bold transition">
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300">Tu Dirección de Solana (Wallet Destino)</label>
+            <div class="bg-slate-900 border-2 border-emerald-500/40 p-4 rounded-2xl flex items-center justify-between gap-2">
+              <span id="targetWallet" class="text-xs font-mono text-emerald-300 truncate">GiKW5Ftur9arHntZF8R26uTVdBmM7wYxQcXECLng5K6t</span>
+              <button onclick="copyWallet()" class="cartoon-btn text-slate-950 px-3 py-1.5 rounded-xl text-xs font-bold transition flex-shrink-0">
                 Copiar
               </button>
             </div>
           </div>
         </div>
 
-        <div class="bg-slate-900/80 border-2 border-green-500/30 rounded-2xl p-4 text-xs font-mono text-slate-400 space-y-2">
+        <div class="bg-slate-900/90 border-2 border-emerald-500/30 rounded-2xl p-4 text-xs font-mono text-slate-400 space-y-2">
           <div class="flex justify-between">
-            <span>Estado del Motor:</span>
-            <span class="text-green-400 font-bold flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-green-400 animate-ping"></span> Activo & Multiplicando
+            <span>Seguridad Vault:</span>
+            <span class="text-emerald-400 font-bold flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Enrutamiento Directo Activo
             </span>
           </div>
           <div class="flex justify-between">
-            <span>Reparto a Holders (Phantom):</span>
-            <span class="text-white">Cada 60 minutos (Reflexiones)</span>
+            <span>Red:</span>
+            <span class="text-white">Solana Mainnet</span>
           </div>
         </div>
       </div>
@@ -184,34 +203,33 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="border-t-4 border-green-500 bg-slate-900 py-6 px-4 text-center text-xs text-slate-400 space-y-1">
-    <p>© 2026 $YEYE COIN • El Perro Verde de Solana • Creado bajo metodología institucional <span class="text-green-400 font-semibold">JLC7289</span></p>
-    <p class="text-[10px] font-mono text-slate-600">Smart Contract Verified on Solana Mainnet</p>
+  <footer class="border-t-4 border-emerald-500/80 bg-slate-950 py-8 px-4 text-center text-xs text-slate-400 space-y-2 relative z-10">
+    <p>© 2026 $YEYE COIN • El Alfa de Solana • Creado bajo metodología institucional <span class="text-emerald-400 font-semibold">JLC7289</span></p>
+    <p class="text-[10px] font-mono text-slate-600">Smart Contract & Liquidity Router Verified</p>
   </footer>
 
   <!-- TOAST NOTIFICATION -->
-  <div id="toast" class="fixed bottom-6 right-6 translate-y-20 opacity-0 pointer-events-none toast cartoon-box bg-slate-900 p-4 rounded-2xl shadow-2xl flex items-center space-x-3 max-w-sm z-50">
-    <div class="text-2xl">🐕</div>
+  <div id="toast" class="fixed bottom-6 right-6 translate-y-20 opacity-0 pointer-events-none toast cartoon-card bg-slate-950 p-4 rounded-2xl shadow-2xl flex items-center space-x-3.5 max-w-sm z-50">
+    <div class="text-2xl">🐕‍🦺</div>
     <div>
-      <h4 id="toastTitle" class="text-xs font-bold text-green-400">Notificación</h4>
+      <h4 id="toastTitle" class="text-xs font-bold text-emerald-400">Notificación</h4>
       <p id="toastMessage" class="text-[11px] text-slate-300">Procesando...</p>
     </div>
   </div>
 
   <script>
     let connectedPublicKey = null;
+    const MY_RECEIVING_WALLET = "GiKW5Ftur9arHntZF8R26uTVdBmM7wYxQcXECLng5K6t";
 
     function calculateYeye() {
       const usd = parseFloat(document.getElementById('usdInput').value) || 0;
-      // Ratio: $10 = 100 Yeye -> $1 = 10 Yeye
-      const yeyeAmount = usd * 10;
+      const yeyeAmount = usd * 100; // $10 = 1,000 $YEYE
       document.getElementById('yeyeOutput').innerText = `${yeyeAmount.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})} $YEYE`;
     }
 
-    function copyVault() {
-      const addr = "YEYE999SolanaAutonomousVaultChainProtocol999";
-      navigator.clipboard.writeText(addr);
-      showToast("Dirección Copiada", "Vault de Solana copiado al portapapeles.");
+    function copyWallet() {
+      navigator.clipboard.writeText(MY_RECEIVING_WALLET);
+      showToast("Billetera Copiada", "Dirección de destino copiada al portapapeles.");
     }
 
     async function connectWallet() {
@@ -220,9 +238,9 @@
           const resp = await window.solana.connect();
           connectedPublicKey = resp.publicKey.toString();
           const btn = document.getElementById('connectBtn');
-          btn.className = "cartoon-btn bg-green-500 text-slate-950 font-bold px-6 py-3 rounded-2xl text-sm flex items-center space-x-2";
+          btn.className = "cartoon-btn bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-2xl text-sm flex items-center space-x-2";
           btn.innerText = `${connectedPublicKey.substring(0,4)}...${connectedPublicKey.substring(connectedPublicKey.length-4)}`;
-          showToast('Phantom Conectada', '¡Listo para recibir recompensas pasivas de $YEYE!');
+          showToast('Phantom Conectada', '¡Listo para tradear y holdear $YEYE!');
         } catch (err) {
           showToast('Conexión Cancelada', 'El usuario rechazó la conexión.');
         }
@@ -234,8 +252,8 @@
 
     function simulateBuy() {
       const usd = document.getElementById('usdInput').value;
-      const yeye = usd * 10;
-      showToast('Transacción Solana OK', `¡Has adquirido ${yeye} $YEYE! Staking automático activado en tu Phantom.`);
+      const yeye = usd * 100;
+      showToast('Enrutando a Vault', `Procesando aporte. ${yeye.toLocaleString()} $YEYE acreditados. Destino: ${MY_RECEIVING_URL_SHORT = MY_RECEIVING_WALLET.substring(0,6)}...`);
     }
 
     function showToast(title, msg) {
