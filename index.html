@@ -92,7 +92,7 @@
       </div>
     </div>
 
-    <!-- HERO SECTION CON SNOOPY VERDE HD + MELENA Y ESTILO IMPONENTE -->
+    <!-- HERO SECTION -->
     <div class="cartoon-card p-8 md:p-14 relative overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div class="space-y-6">
         <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/50 px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest inline-block font-bold">
@@ -102,7 +102,7 @@
           El fin de los memes aburridos. Conoce a <span class="text-emerald-400 glow-green">YEYE</span>.
         </h2>
         <p class="text-slate-300 text-base leading-relaxed">
-          Con un suministro limitado de <strong class="text-emerald-400">21,000,000,000 tokens</strong>, $YEYE fusiona el alma del clásico canino de caricatura con esteroides en Solana. Ya ha recaudado más de <strong class="text-emerald-400">$24,754 USD</strong> y está listo para dominar el mercado.
+          Con un suministro de <strong class="text-emerald-400">21,000,000,000 tokens</strong>, $YEYE fusiona el alma de Snoopy con esteroides ciber-verdes en Solana. Ya ha recaudado más de <strong class="text-emerald-400">$24,754 USD</strong> y está listo para dominar el mercado.
         </p>
         <div class="flex flex-wrap gap-4 pt-2">
           <div class="bg-slate-900 border-2 border-emerald-500/50 px-4 py-3 rounded-2xl font-mono">
@@ -116,7 +116,7 @@
         </div>
       </div>
 
-      <!-- ARTE VECTORIAL HD: SNOOPY VERDE CON MELENA Y GAFAS CYBER -->
+      <!-- ARTE SNOOPY VERDE CIBER CON MELENA HD -->
       <div class="flex justify-center items-center">
         <div class="relative w-72 h-72 md:w-88 md:h-88 bg-gradient-to-br from-emerald-500/20 to-green-900/30 rounded-3xl border-4 border-emerald-500 shadow-[0_0_40px_rgba(16,185,129,0.3)] flex items-center justify-center p-6">
           <svg viewBox="0 0 300 300" class="w-full h-full drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)]" xmlns="http://www.w3.org/2000/svg">
@@ -135,30 +135,29 @@
               </filter>
             </defs>
 
-            <!-- Fondo circular dinámico -->
             <circle cx="150" cy="150" r="120" fill="#030712" stroke="#10b981" stroke-width="4" stroke-dasharray="12 8"/>
 
-            <!-- Melena Verde Explosiva en la cabeza estilo Squee -->
+            <!-- Melena Verde Explosiva -->
             <path d="M90 60 Q130 15 180 35 Q220 20 215 75 Q245 100 205 130 Q160 90 90 60 Z" fill="url(#melenaGrad)" stroke="#022c22" stroke-width="5" stroke-linejoin="round"/>
             <path d="M100 45 Q135 5 175 30 Q145 70 110 55 Z" fill="#6ee7b7" stroke="#022c22" stroke-width="4"/>
 
-            <!-- Oreja caída icónica de Snoopy pero en verde oscuro ciber -->
+            <!-- Oreja caída icónica de Snoopy -->
             <path d="M95 100 Q65 120 50 170 Q70 190 95 140 Z" fill="#047857" stroke="#022c22" stroke-width="5" stroke-linejoin="round"/>
 
             <!-- Cabeza clásica perfilada de Snoopy -->
             <path d="M80 110 Q70 90 100 85 Q160 75 195 105 Q220 125 210 160 Q195 190 140 185 Q90 180 80 110 Z" fill="url(#snoopyBody)" stroke="#022c22" stroke-width="6" stroke-linejoin="round"/>
 
-            <!-- Hocico alargado característico de Snoopy -->
+            <!-- Hocico alargado característico -->
             <path d="M180 130 Q240 135 250 165 Q235 185 180 175 Z" fill="#86efac" stroke="#022c22" stroke-width="6" stroke-linejoin="round"/>
 
-            <!-- Nariz redonda negra clásica de Snoopy -->
+            <!-- Nariz redonda negra -->
             <ellipse cx="248" cy="158" rx="10" ry="8" fill="#030712"/>
             <ellipse cx="246" cy="156" rx="3.5" ry="2" fill="#ffffff" opacity="0.8"/>
 
-            <!-- Gafas de sol estilo hacker sobre los ojos -->
+            <!-- Gafas de sol estilo hacker -->
             <path d="M135 105 L195 118 L190 142 L130 128 Z" fill="#030712" stroke="#10b981" stroke-width="4" stroke-linejoin="round" filter="url(#neonGlow)"/>
 
-            <!-- Collar de púas estilo Web3 -->
+            <!-- Collar de púas Web3 -->
             <path d="M95 180 Q145 215 195 185 L188 198 Q145 228 102 198 Z" fill="#eab308" stroke="#022c22" stroke-width="5"/>
             <circle cx="145" cy="207" r="6" fill="#ef4444" stroke="#022c22" stroke-width="2.5"/>
           </svg>
@@ -166,14 +165,11 @@
       </div>
     </div>
 
-    <!-- SECCIÓN CALCULADORA Y BILLETERA RECEPTORA -->
+    <!-- SECCIÓN CALCULADORA Y BILLETERA -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
-      <!-- CALCULADORA DE CONVERSIÓN -->
       <div class="cartoon-card p-8 space-y-6">
         <h3 class="text-2xl font-bold text-emerald-400">🧮 Calculadora $YEYE</h3>
-        <p class="text-slate-300 text-sm">Calcula cuántos tokens $YEYE recibes al instante (Ratio oficial: $10 USD = 1,000 $YEYE).</p>
-        
+        <p class="text-slate-300 text-sm">Calcula cuántos tokens $YEYE recibes al instante ($10 USD = 1,000 $YEYE).</p>
         <div class="space-y-4">
           <div>
             <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Aporte en USD / USDC / SOL</label>
@@ -182,109 +178,77 @@
               <input type="number" id="usdInput" min="1" value="10" oninput="calculateYeye()" class="cartoon-input w-full pl-9 pr-4 py-3.5 text-white font-mono font-bold text-lg">
             </div>
           </div>
-
           <div class="bg-slate-900 border-2 border-emerald-500/40 rounded-2xl p-6 text-center space-y-2">
             <span class="text-xs text-slate-400 font-mono uppercase">Tus Tokens $YEYE a Recibir:</span>
             <div id="yeyeOutput" class="text-4xl font-extrabold text-emerald-400 font-mono glow-green">1,000.00 $YEYE</div>
-            <p class="text-[11px] text-slate-500">Activación automática de staking pasivo en tu Phantom.</p>
           </div>
-
           <button onclick="simulateBuy()" class="cartoon-btn w-full text-slate-950 font-bold py-4 rounded-xl text-base uppercase tracking-wider shadow-lg">
             Adquirir $YEYE Ahora
           </button>
         </div>
       </div>
 
-      <!-- BILLETERA RECEPTORA OFICIAL -->
       <div class="cartoon-card p-8 space-y-6 flex flex-col justify-between">
         <div class="space-y-4">
           <h3 class="text-2xl font-bold text-emerald-400">💼 Billetera Receptora Oficial</h3>
-          <p class="text-slate-300 text-sm">
-            Todos los aportes en Solana o USDC enviados desde la plataforma caen de manera directa en tu billetera designada.
-          </p>
-
+          <p class="text-slate-300 text-sm">Todos los aportes en Solana o USDC llegan directamente a tu billetera designada.</p>
           <div class="space-y-2">
             <label class="block text-xs font-bold uppercase tracking-wider text-slate-300">Tu Dirección de Solana (Wallet Destino)</label>
             <div class="bg-slate-900 border-2 border-emerald-500/40 p-4 rounded-2xl flex items-center justify-between gap-2">
               <span id="targetWallet" class="text-xs font-mono text-emerald-300 truncate">GiKW5Ftur9arHntZF8R26uTVdBmM7wYxQcXECLng5K6t</span>
-              <button onclick="copyWallet()" class="cartoon-btn text-slate-950 px-3 py-1.5 rounded-xl text-xs font-bold transition flex-shrink-0">
-                Copiar
-              </button>
+              <button onclick="copyWallet()" class="cartoon-btn text-slate-950 px-3 py-1.5 rounded-xl text-xs font-bold transition flex-shrink-0">Copiar</button>
             </div>
           </div>
         </div>
-
         <div class="bg-slate-900/90 border-2 border-emerald-500/30 rounded-2xl p-4 text-xs font-mono text-slate-400 space-y-2">
-          <div class="flex justify-between">
-            <span>Seguridad Vault:</span>
-            <span class="text-emerald-400 font-bold flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Enrutamiento Directo Activo
-            </span>
-          </div>
-          <div class="flex justify-between">
-            <span>Red:</span>
-            <span class="text-white">Solana Mainnet</span>
-          </div>
+          <div class="flex justify-between"><span>Seguridad Vault:</span><span class="text-emerald-400 font-bold">Enrutamiento Activo</span></div>
+          <div class="flex justify-between"><span>Red:</span><span class="text-white">Solana Mainnet</span></div>
         </div>
       </div>
-
     </div>
 
-    <!-- SECCIÓN ROADMAP -->
+    <!-- ROADMAP -->
     <div class="cartoon-card p-8 md:p-12 space-y-8">
       <div class="text-center max-w-2xl mx-auto space-y-2">
-        <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/50 px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest font-bold inline-block">
-          Estrategia & Expansión
-        </span>
+        <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/50 px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest font-bold inline-block">Estrategia & Expansión</span>
         <h3 class="text-3xl font-extrabold text-white">🗺️ Hoja de Ruta $YEYE (Roadmap)</h3>
-        <p class="text-slate-300 text-sm">El plan maestro para enterrar a los perros tradicionales y conquistar la cima de Solana.</p>
       </div>
-
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-slate-900/90 border-2 border-emerald-500/50 p-6 rounded-2xl space-y-3">
-          <span class="text-xs font-mono font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 1: Génesis</span>
-          <h4 class="text-xl font-bold text-white">El Despertar del Canino</h4>
+          <span class="text-xs font-mono font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 1</span>
+          <h4 class="text-xl font-bold text-white">Génesis</h4>
           <ul class="text-xs text-slate-300 space-y-2 font-mono">
-            <li>✅ Emisión de 21,000,000,000 tokens en Solana.</li>
-            <li>✅ Lanzamiento de Snoopy Verde HD.</li>
-            <li>🚀 Récord inicial de recaudación ($24,754+ USD).</li>
-            <li>⏳ Campaña masiva de marketing viral.</li>
+            <li>✅ Emisión 21,000,000,000 tokens.</li>
+            <li>✅ Lanzamiento Snoopy Verde HD.</li>
+            <li>🚀 Recaudación $24,754+ USD.</li>
           </ul>
         </div>
-
         <div class="bg-slate-900/90 border-2 border-emerald-500/50 p-6 rounded-2xl space-y-3">
-          <span class="text-xs font-mono font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 2: Dominio DEX</span>
-          <h4 class="text-xl font-bold text-white">Expansión & Listado</h4>
+          <span class="text-xs font-mono font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 2</span>
+          <h4 class="text-xl font-bold text-white">Dominio DEX</h4>
           <ul class="text-xs text-slate-300 space-y-2 font-mono">
-            <li>🔄 Listado oficial en Raydium & Orca.</li>
-            <li>💧 Creación del Pool de Liquidez con los fondos recaudados.</li>
-            <li>🎁 Activación de Airdrops masivos para holders.</li>
-            <li>📈 Campaña de trending en CoinMarketCap.</li>
+            <li>🔄 Listado en Raydium & Orca.</li>
+            <li>💧 Pool de Liquidez activo.</li>
+            <li>🎁 Airdrops para holders.</li>
           </ul>
         </div>
-
         <div class="bg-slate-900/90 border-2 border-emerald-500/50 p-6 rounded-2xl space-y-3">
-          <span class="text-xs font-mono font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 3: El Imperio</span>
-          <h4 class="text-xl font-bold text-white">Soberanía Absoluta</h4>
+          <span class="text-xs font-mono font-bold text-emerald-400 uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 inline-block">Fase 3</span>
+          <h4 class="text-xl font-bold text-white">El Imperio</h4>
           <ul class="text-xs text-slate-300 space-y-2 font-mono">
-            <li>🌐 Lanzamiento dApp Staking 450% APY real.</li>
-            <li>🛒 Pasarela de pagos descentralizada con $YEYE.</li>
-            <li>🚀 Conquista de la corona memecoin en Solana.</li>
-            <li>💎 Gobernanza DAO exclusiva.</li>
+            <li>🌐 dApp de Staking 450% APY.</li>
+            <li>🛒 Pasarela de pagos $YEYE.</li>
+            <li>💎 Gobernanza DAO.</li>
           </ul>
         </div>
       </div>
     </div>
-
   </main>
 
-  <!-- FOOTER -->
   <footer class="border-t-4 border-emerald-500/80 bg-slate-950 py-8 px-4 text-center text-xs text-slate-400 space-y-2 relative z-10">
-    <p>© 2026 $YEYE COIN • El Alfa de Solana • Creado bajo metodología institucional <span class="text-emerald-400 font-semibold">JLC7289</span></p>
-    <p class="text-[10px] font-mono text-slate-600">Smart Contract & Liquidity Router Verified</p>
+    <p>© 2026 $YEYE COIN • El Alfa de Solana • Metodología JLC7289</p>
   </footer>
 
-  <!-- TOAST NOTIFICATION -->
   <div id="toast" class="fixed bottom-6 right-6 translate-y-20 opacity-0 pointer-events-none toast cartoon-card bg-slate-950 p-4 rounded-2xl shadow-2xl flex items-center space-x-3.5 max-w-sm z-50">
     <div class="text-2xl">🐕‍🦺</div>
     <div>
@@ -305,7 +269,7 @@
 
     function copyWallet() {
       navigator.clipboard.writeText(MY_RECEIVING_WALLET);
-      showToast("Billetera Copiada", "Dirección de destino copiada al portapapeles.");
+      showToast("Billetera Copiada", "Dirección copiada al portapapeles.");
     }
 
     async function connectWallet() {
@@ -318,10 +282,9 @@
           btn.innerText = `${connectedPublicKey.substring(0,4)}...${connectedPublicKey.substring(connectedPublicKey.length-4)}`;
           showToast('Phantom Conectada', '¡Listo para tradear y holdear $YEYE!');
         } catch (err) {
-          showToast('Conexión Cancelada', 'El usuario rechazó la conexión.');
+          showToast('Conexión Cancelada', 'Rechazaste la conexión.');
         }
       } else {
-        showToast('Phantom No Detectada', 'Instala la extensión de Phantom Wallet.');
         window.open('https://phantom.app/', '_blank');
       }
     }
@@ -329,7 +292,7 @@
     function simulateBuy() {
       const usd = document.getElementById('usdInput').value;
       const yeye = usd * 100;
-      showToast('Enrutando a Vault', `Procesando aporte. ${yeye.toLocaleString()} $YEYE acreditados. Destino: ${MY_RECEIVING_WALLET.substring(0,6)}...`);
+      showToast('Enrutando a Vault', `Aporte de $${usd} procesado. Destino: ${MY_RECEIVING_WALLET.substring(0,6)}...`);
     }
 
     function showToast(title, msg) {
